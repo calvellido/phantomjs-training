@@ -1,0 +1,36 @@
+{
+  "name": "phantomjs-training",
+  "version": "0.0.1",
+  "description": "This a simple playground to test PhantomJS features",
+  "main": "github.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --progress --profile",
+    "clean": "npm cache clean && npm run rimraf -- node_modules build",
+    "rimraf": "rimraf",
+    "start": "npm run build && phantomjs build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvellido/phantomjs-training.git"
+  },
+  "keywords": [
+    "phantomjs"
+  ],
+  "author": "Juan Valencia Calvellido",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/calvellido/phantomjs-training/issues"
+  },
+  "homepage": "https://github.com/calvellido/phantomjs-training#readme",
+  "dependencies": {
+    "phantomjs": "^2.1.7",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "rimraf": "~2.5.4"
+  }
+}
