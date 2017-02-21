@@ -81,7 +81,7 @@ page.open('http://github.com/trending', function(status) {
     console.log('Visiting it...');
     // Now we follow the link of the most starred repo to get a screenshot of it
     console.log('Page load started');
-    page.open('https://github.com/airbnb/lottie-android', function(status) {
+    page.open(most_starred_repo.link, function(status) {
 
       if (status === 'success') {
         page.render('most_starred_repo.png');
