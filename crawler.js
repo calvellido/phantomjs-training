@@ -67,7 +67,7 @@ page.open('http://github.com/trending', function(status) {
 
     let base_href = 'https://github.com';
 
-    // Now we filter the data to only get the ines that got between 100 and 200 stars
+    // Now we filter the data to only get the ones that got between 100 and 200 stars
     let filtered_repo_data_list = repo_data_list.filter((elem) => elem.stars >= 100 && elem.stars <= 200);
 
     // Here we fill the links with the base href
